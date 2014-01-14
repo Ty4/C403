@@ -1,0 +1,724 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"n",
+				"name"
+			],
+			[
+				"cour",
+				"courseMarks"
+			],
+			[
+				"cou",
+				"courseMarks"
+			],
+			[
+				"sp",
+				"splitext  (function)"
+			],
+			[
+				"htt",
+				"HTTPError  (class)"
+			],
+			[
+				"errorco",
+				"errorcode  (variable)"
+			],
+			[
+				"pa",
+				"path  (module)"
+			],
+			[
+				"frag",
+				"fragShader	char *"
+			],
+			[
+				"vert",
+				"vertShader	char *"
+			],
+			[
+				"progr",
+				"programHandle	int"
+			],
+			[
+				"fragme",
+				"fragmentShaderHandle	int"
+			],
+			[
+				"NULL",
+				"NULL	macro"
+			],
+			[
+				"GL_FRAG",
+				"GL_FRAGMENT_SHADER	macro"
+			],
+			[
+				"glCreat",
+				"glCreateShader	macro"
+			],
+			[
+				"GL_VE",
+				"GL_VERTEX_SHADER	macro"
+			],
+			[
+				"glCr",
+				"glCreateShader	macro"
+			],
+			[
+				"read",
+				"readShader(char *fileName)	char *"
+			],
+			[
+				"steps",
+				"steps	int"
+			],
+			[
+				"frame",
+				"frame	int"
+			],
+			[
+				"rV",
+				"rVal	double"
+			],
+			[
+				"Bac",
+				"BACK	bool"
+			],
+			[
+				"dep",
+				"depth	float"
+			],
+			[
+				"de",
+				"depth"
+			],
+			[
+				"glP",
+				"glPushMatrix()	void"
+			],
+			[
+				"usl",
+				"usleep(__useconds_t __useconds)	int"
+			],
+			[
+				"rnd0",
+				"rnd01()	double"
+			],
+			[
+				"rd",
+				"rnd01()	double"
+			],
+			[
+				"glPush",
+				"glPushMatrix()	void"
+			],
+			[
+				"glClearCo",
+				"glClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)	void"
+			],
+			[
+				"rnd",
+				"rnd01()	double"
+			],
+			[
+				"glSwap",
+				"glutSwapBuffers()	void"
+			],
+			[
+				"glCl",
+				"glClear(GLbitfield mask)	void"
+			],
+			[
+				"draw",
+				"draw_cube()	void"
+			],
+			[
+				"glPop",
+				"glPopMatrix()	void"
+			],
+			[
+				"gltr",
+				"glTranslated(GLdouble x, GLdouble y, GLdouble z)	void"
+			],
+			[
+				"x_",
+				"x_angle	float"
+			],
+			[
+				"x",
+				"x_angle	float"
+			],
+			[
+				"glrot",
+				"glRotated(GLdouble angle, GLdouble x, GLdouble y, GLdouble z)	void"
+			],
+			[
+				"GL_DEPTH_TE",
+				"GL_DEPTH_TEST	macro"
+			],
+			[
+				"glEna",
+				"glEnable(GLenum cap)	void"
+			],
+			[
+				"glPu",
+				"glPushMatrix()	void"
+			],
+			[
+				"glTra",
+				"glTranslatef(GLfloat x, GLfloat y, GLfloat z)	void"
+			],
+			[
+				"glRot",
+				"glRotated(GLdouble angle, GLdouble x, GLdouble y, GLdouble z)	void"
+			],
+			[
+				"GL_DEPTH_B",
+				"GL_DEPTH_BUFFER_BIT"
+			],
+			[
+				"GLUT",
+				"GLUT_DEPTH"
+			],
+			[
+				"t_",
+				"t_ind	size_t"
+			],
+			[
+				"stop",
+				"stop_after_first	bool"
+			],
+			[
+				"flip",
+				"flipped	int"
+			],
+			[
+				"trian",
+				"triangles	std::vector<Triangle>"
+			],
+			[
+				"index",
+				"index	size_t"
+			],
+			[
+				"Trian",
+				"Triangle"
+			],
+			[
+				"tria",
+				"triangles	std::vector<Triangle>"
+			],
+			[
+				"height",
+				"height	Coordinate"
+			],
+			[
+				"wi",
+				"width	Coordinate"
+			],
+			[
+				"Point",
+				"Point	struct"
+			],
+			[
+				"Tr",
+				"Triangle	struct"
+			],
+			[
+				"Po",
+				"Point	struct"
+			],
+			[
+				"point",
+				"points	Point [3]"
+			],
+			[
+				"poi",
+				"points	Point [3]"
+			],
+			[
+				"in_c",
+				"in_circle(const Point &a, const Point &b, const Point &c, const Point &d)	Coordinate"
+			],
+			[
+				"in_",
+				"in_circle(const Point &a, const Point &b, const Point &c, const Point &d)	Coordinate"
+			],
+			[
+				"or",
+				"orientation(const Point &a, const Point &b, const Point &c)	Coordinate"
+			],
+			[
+				"C",
+				"C"
+			],
+			[
+				"delta",
+				"delta	float"
+			],
+			[
+				"vec",
+				"vec	Vector3f"
+			],
+			[
+				"Vector3f",
+				"Vector3f	typedef"
+			],
+			[
+				"DMatri",
+				"DMatrix	float **"
+			],
+			[
+				"Dma",
+				"DMatrix	float **"
+			],
+			[
+				"fclose",
+				"fclose(FILE *__stream)	int"
+			],
+			[
+				"numVert",
+				"numVertices	int"
+			],
+			[
+				"D",
+				"DMatrix	float **"
+			],
+			[
+				"compu",
+				"computeDV()	void"
+			],
+			[
+				"vertices",
+				"vertices	std::vector<float>"
+			],
+			[
+				"hierar",
+				"hierarchy	Node *"
+			],
+			[
+				"buildBone",
+				"buildBonesList(Node *)	void"
+			],
+			[
+				"bone",
+				"bone	Node *"
+			],
+			[
+				"pu",
+				"push_back(value_type &&__x)	void"
+			],
+			[
+				"bones",
+				"bones	std::vector<Node *>"
+			],
+			[
+				"tr",
+				"transl"
+			],
+			[
+				"hier",
+				"hierarchy	Node *"
+			],
+			[
+				"numVer",
+				"numVertices	int"
+			],
+			[
+				"faceSi",
+				"faceSizes	std::vector<int>"
+			],
+			[
+				"ig",
+				"ignore(streamsize __n, int_type __delim)	__istream_type &"
+			],
+			[
+				"numv",
+				"numVertices	int"
+			],
+			[
+				"vertN",
+				"vertNorms	std::vector<float>"
+			],
+			[
+				"verti",
+				"vertices	std::vector<float>"
+			],
+			[
+				"size_t",
+				"size_t	typedef"
+			],
+			[
+				"writeo",
+				"writeObjFile()	void"
+			],
+			[
+				"fa",
+				"faceIndices	std::vector<int>"
+			],
+			[
+				"size",
+				"size_t	typedef"
+			],
+			[
+				"face",
+				"faceSizes	std::vector<int>"
+			],
+			[
+				"glCal",
+				"glCallList(GLuint list)	void"
+			],
+			[
+				"objFil",
+				"objFile	char*"
+			],
+			[
+				"bv",
+				"bvhFile	char*"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"bvhIn",
+				"bvhIn	ifstream"
+			],
+			[
+				"arg",
+				"argv	char **"
+			],
+			[
+				"",
+				""
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"PACK",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 190.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/cshome/tdavidso/C410/labs/lab1/name-family.py",
+		"/usr/lib/python2.7/SocketServer.py",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/usr/lib/python2.7/unittest/__init__.py",
+		"/usr/lib/python2.7/urllib2.py",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/cshome/tdavidso/C410/as1/CMPUT404-assignment-webserver/runner.sh",
+		"/cshome/tdavidso/C410/as1/CMPUT404-assignment-webserver/server.py",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/User/Pylinter.sublime-settings",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/Pylinter/Pylinter.sublime-settings",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/buttons.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/beaconLight.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/skyShader.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/diffuseTexture.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/diffuseTexture.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/lightmappedMetal.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/lightmappedMetal.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/tapeSpindles.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/tapeSpindles.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/islandTerrain.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/islandTerrain.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/beaconLight.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/oceanWater.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/theSun.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/buttons.frag",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/oceanWater.vert",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaderUtil.h",
+		"/cshome/tdavidso/C411/ass4/a4files_3/shaders/question1_student_code.h",
+		"/cshome/tdavidso/C350/labs/lab10/cubes.C",
+		"/cshome/tdavidso/C350/labs/lab10/draw.C",
+		"/cshome/tdavidso/C350/labs/lab10/squares.c",
+		"/cshome/tdavidso/C350/labs/lab10/make",
+		"/cshome/tdavidso/C411/ass1/modelviewer.cpp",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/User/C++Labs.sublime-build",
+		"/cshome/tdavidso/C411/ass4/a4files_1/shaderUtil.h",
+		"/cshome/tdavidso/C411/ass4/a4files_1/shaders/question1_student_code.h",
+		"/cshome/tdavidso/C411/ass4/a4files_1/Makefile",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/User/C++GL.sublime-build",
+		"/cshome/tdavidso/C350/labs/lab9/Triang.H",
+		"/cshome/tdavidso/C350/labs/lab9/Triang.C",
+		"/cshome/tdavidso/C350/labs/lab9/disp.C",
+		"/cshome/tdavidso/C350/labs/lab9/Triang2.C",
+		"/cshome/tdavidso/C350/labs/lab9/test.C",
+		"/cshome/tdavidso/C350/labs/lab9/makefile",
+		"/cshome/tdavidso/.config/sublime-text-2/Packages/User/MakeRun.sublime-build",
+		"/cshome/tdavidso/C411/ass3/a3files/motion/gymnastics3.bvh",
+		"/cshome/tdavidso/C411/ass3/personviewer.cpp",
+		"/cshome/tdavidso/C411/ass3/a3files/motion/gymnastics2.bvh",
+		"/cshome/tdavidso/C411/ass3/a3files/mesh/person-dev.obj",
+		"/cshome/tdavidso/C411/ass3/ass3.sublime-workspace",
+		"/cshome/tdavidso/C411/ass3/a3files/mesh/person.obj",
+		"/cshome/tdavidso/C411/ass2/solution2/joint.h",
+		"/cshome/tdavidso/C411/ass2/motionviewer.cpp",
+		"/cshome/tdavidso/C411/ass2/motionviewer.h",
+		"/cshome/tdavidso/C411/ass3/makefile",
+		"/cshome/tdavidso/C411/ass2/Makefile",
+		"/cshome/tdavidso/Sublime/Projects/411ass3/ass3/src/makefile",
+		"/cshome/tdavidso/Sublime/Projects/ass3/ass3/makefile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"[1]",
+			"Angle",
+			"1.",
+			"vert",
+			">",
+			"NEED",
+			"frame",
+			"gVal",
+			"gGoal",
+			"r",
+			"Val",
+			"1.0",
+			"if (BACK)",
+			"--depth)",
+			"dir",
+			"i",
+			"rot",
+			"++angle",
+			"angle",
+			"2.0",
+			"8",
+			"10",
+			"2.0",
+			"5",
+			".0",
+			"0.0",
+			",",
+			"rnd01",
+			".0",
+			"1.",
+			"rnd01()",
+			"1.0",
+			"0.",
+			"0.0",
+			"glPushMatrix",
+			"1.0",
+			"7",
+			"3",
+			"5.0",
+			"10",
+			"1",
+			"0.0",
+			"0",
+			"memset",
+			"emset",
+			"w",
+			"BORDER",
+			"t1",
+			"&&",
+			"<",
+			"cxa",
+			"b->offset",
+			"b->offset.",
+			"+1",
+			"3]",
+			"vertices[i*3",
+			"hierarchy",
+			"glTranslatef",
+			"readHierarchy",
+			"blend",
+			"vertNorms",
+			"vertices",
+			"faceSizes",
+			"writeObjFile",
+			"++",
+			"vector",
+			"JOINT",
+			"joint",
+			"Joint",
+			"JOINT",
+			"joint",
+			"JOINT",
+			"joint",
+			"unrecon",
+			"FLT_MAX",
+			"joint",
+			"unsigned",
+			"JOINT",
+			"joint",
+			"Joint",
+			"vector",
+			"joint",
+			"JOINT",
+			"joint",
+			"JOINT",
+			"joint",
+			"JOINT",
+			"joint",
+			"Joint",
+			"joint",
+			"JOINT",
+			"joint",
+			"JOINT",
+			"joint",
+			"JOINT",
+			"joint",
+			"fileName",
+			"speedAdjust",
+			"Joint",
+			"joint",
+			"vector",
+			"joint",
+			"writeHierarchy",
+			"vector",
+			"joint",
+			"Vector3f",
+			"vector",
+			"joint",
+			"Quaternionf",
+			"Vector3f",
+			"vector",
+			"string",
+			"joint",
+			"Joint",
+			"joint",
+			"NODE",
+			"joint",
+			"objIn",
+			"readObjFile",
+			"infile",
+			"fileName"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 162.0
+	},
+	"output.exec":
+	{
+		"height": 227.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true
+}
