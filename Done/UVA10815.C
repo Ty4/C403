@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* by Tyler Davidson
  *
  * Andy's First Dictionary
@@ -14,6 +15,8 @@
  *   is no need to sort the set before outputting it.
  */
 
+=======
+>>>>>>> deaffa171af3f73171a85ebac00e58dac996c13c
 #include <algorithm>	// for transform
 #include <cctype>		// for tolower
 #include <iostream>
@@ -55,7 +58,11 @@ int main()
 	}
 
 	// print out dictionary
+<<<<<<< HEAD
 	for (set<string>::iterator it = dictionary.begin();
+=======
+	for (set<string>::iterator it = dictionary.begin(); 
+>>>>>>> deaffa171af3f73171a85ebac00e58dac996c13c
 			it != dictionary.end(); ++it)
 		cout << *it << endl;
 
