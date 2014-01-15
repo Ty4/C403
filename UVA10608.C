@@ -37,14 +37,12 @@ public:
         size_t root_i = find(i);
         size_t root_j = find(j);
         if (root_i != root_j) {
-            if (forest[root_i].rank < forest[root_j].rank)
-                forest[root_i].parent = root_j;
-            else if (forest[root_i].rank > forest[root_j].rank)
+            if (forest[root_i].rank > forest[root_j].rank)
                 forest[root_j].parent = root_i;
-            else {
+            else
                 forest[root_i].parent = root_j;
+            if (forest[root_i].parent == forest[root_j].parent)
                 forest[root_j].rank += 1;
-            }
         }
     }
 
