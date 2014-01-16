@@ -30,7 +30,7 @@ int cycleLength(const int & n_)
 
 int main()
 {
-	int n, i, j;
+	int i, j;
 	int lower, upper;
 	while (cin >> i >> j){
 		lower = i; upper = j;

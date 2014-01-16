@@ -1,3 +1,9 @@
+/* by Tyler Davidson
+ *
+ * Graphical Editor NONTRIVIAL
+ *
+ */
+
 #include <iostream>
 #include <string>
 

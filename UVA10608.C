@@ -1,3 +1,8 @@
+/* by Tyler Davidson
+ *
+ * Friends
+ */
+
 #include <iostream>
 #include <vector>
 

@@ -1,3 +1,8 @@
+/* by Tyler Davidson
+ *
+ * SumSets  NONTRIVIAL
+ */
+
 #include <cstdlib>
 #include <iostream>
 #include <set>

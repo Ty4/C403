@@ -1,3 +1,8 @@
+/* by Tyler Davidson
+ *
+ * The Blocks Problem  NONTRIVIAL
+ */
+
 #include <iostream>
 #include <string>
 #include <vector>
