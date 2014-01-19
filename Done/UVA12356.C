@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Army Buddies  NONTRIVIAL
+ * Army Buddies:	NONTRIVIAL	(Data Structures)
  *
  * This program keeps a list of soldiers, and each soldier is aware of who is
  *    to the left and right of him. For each L R pair, it updates the values

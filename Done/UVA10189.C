@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Minesweeper NONTRIVIAL
+ * Minesweeper:		NONTRIVIAL	(Straightforward)
  *
  * This program outputs a simple version of the Minesweeper completion screen.
  * Given a grid for input, showing where the mines are, this program looks

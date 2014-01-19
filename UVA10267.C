@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Graphical Editor NONTRIVIAL
+ * Graphical Editor:	NONTRIVIAL	(Straightforward)
  *
  */
 

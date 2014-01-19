@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * 3n + 1 Problem: NONTRIVIAL
+ * 3n + 1 Problem:	NONTRIVIAL	(Simulation)
  *
  * This program takes as input two integers. It iterates over each number
  *    within that range, and goes through the cycle with that number.

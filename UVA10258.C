@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Contest Scoreboard  NONTRIVIAL
+ * Contest Scoreboard:	NONTRIVIAL	(Simulation)
  */
 
 #include <iostream>

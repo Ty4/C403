@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * SumSets  NONTRIVIAL
+ * SumSets:	NONTRIVIAL	(Data Structures)
  */
 
 #include <cstdlib>
@@ -11,34 +11,66 @@
 
 using namespace std;
 
+// makeshift map, with the combination of first and second acting as the key
+// first < second
 struct sumMap
 {
-private:
-	int A;
-	int B;
-	int sum;
-public:
-	sumMap(int _A, int _B, int _sum) : A(_A), B(_B), sum(_sum){}
+	sumMap(int _first, int _sec, int _sum) : sum(_sum)
+	{
+		if (_first <= _sec){
+			first = _first;
+			second = _sec;
+		}
+		else{
+			first = _sec;
+			second = _first;
+		}
 
-	int getFirst() const { return A; }
-	int getSecond() const { return B; }
-	int getSum() const { return sum; }
+	}
+
+	const int getSum() const { return sum; }
+	const int getSecond() const { return second; }
+
+	const bool isUnique(const sumMap & rhs) const
+	{
+		if (first == rhs.first) return false;
+		if (first == rhs.second) return false;
+		if (second == rhs.first) return false;
+
+		return second != rhs.second;
+	}
 
 	bool operator<(const sumMap & rhs) const
 	{
-		return sum < rhs.sum;
+		if (sum <= rhs.sum) return true;
+		return false;
 	}
+
+	void print() const
+	{
+		cout << "First: " << first << ", Second: " << second;
+		cout << ", Sum: " << sum << endl;
+	}
+
+
+private:
+	int first;
+	int second;
+	int sum;
+
 };
 
-int binSearch(const vector<int> & sums, const int & val, int first, int last)
+// returns the index of sums that matches val
+int binSearch(const vector<sumMap> & sums, const sumMap & val,
+	int first, int last)
 {
 	if (first > last) return -1;
 	else {
 		int mid = (first + last)/2;
 
-		if (sums[mid] > val)
+		if (sums[mid].getSum() > val.getSum())
 			return binSearch(sums, val, first, mid-1);
-		else if (sums[mid] < val)
+		else if (sums[mid].getSum() < val.getSum())
 			return binSearch(sums, val, mid+1, last);
 		else
 			return mid;
@@ -51,26 +83,19 @@ int main()
 
 	cin >> N;
 	while (N != 0){
+		int max = -1;
 		set<sumMap> sumSet;
 		set<sumMap>::iterator sumIt;
 		set<sumMap> diffSet;
 		set<sumMap>::iterator diffIt;
-		vector<int> S, abSums, dcDiffs;
-		int A, B, C, D, sum;
+		vector<int> S;
+		vector<sumMap> abSums, cdDiffs;
 
-		A = B = C = D = -1;
-
-		// read in values for S
 		for (int i = 0; i < N; ++i){
 			int num;
 			cin >> num;
 			S.push_back(num);
 		}
-
-		// cout << "Set: ";
-		// for (size_t i = 0; i < S.size(); ++i)
-		// 	cout << S[i] << " ";
-		// cout << endl;
 
 		// create list of sums (A+B), store in sorted order
 		for (size_t i = 0; i < S.size() - 1; ++i){
@@ -88,37 +113,23 @@ int main()
 			}
 		}
 
-		// put sums into vector, to ease binary search
 		for (sumIt = sumSet.begin(); sumIt != sumSet.end(); ++sumIt)
-			abSums.push_back((*sumIt).getSum());
+			abSums.push_back(*sumIt);
 
-		// cout << "Sum Set: ";
-		// for (size_t i = 0; i < abSums.size(); ++i)
-		// 	cout << abSums[i] << " ";
-		// cout << endl;
+		for (diffIt = diffSet.begin(); diffIt != diffSet.end(); ++diffIt)
+			cdDiffs.push_back(*diffIt);
 
-		for (diffIt = diffSet.begin(); diffIt != diffSet.end(); ++diffIt){
-			sum = binSearch(abSums, (*diffIt).getSum(), 0, abSums.size()-1);
-			if (sum != -1){
-				// if (((*diffIt).getFirst() > D) &&
-				// 	((*diffIt).getSectond() != abSums[sum].g))
+		vector<sumMap>::reverse_iterator rDiffIt = cdDiffs.rbegin();
+		for (; rDiffIt != cdDiffs.rend(); ++rDiffIt){
+			int match = binSearch(abSums, (*rDiffIt), 0, abSums.size()-1);
+			if (match > -1){
+				if (abSums[match].isUnique(*rDiffIt))
+					if ((*rDiffIt).getSecond() > max)
+						max = (*rDiffIt).getSecond();
 			}
 		}
 
-		// search for D-C in abSums, starting with D at the largest value
-		/*for (size_t i = S.size() - 1; i > 0; --i){
-			for (int j = i-1; j >= 0; --j){
-				sum = binSearch(abSums, S[i] - S[j], 0, abSums.size()-1);
-				if (sum != -1){
-					cout << "C: " << S[j] << ", D: " << S[i] << endl;
-					if (S[i] > D){
-						D = S[i]; C = S[j];
-					}
-				}
-			}
-		}*/
-
-		if (D != -1) cout << D << endl;
+		if (max > -1) cout << max << endl;
 		else cout << "no solution" << endl;
 
 		cin >> N;

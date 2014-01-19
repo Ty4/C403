@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Andy's First Dictionary
+ * Andy's First Dictionary:		(Data Structures)
  *
  * Input: a file containing text consisting of words and other symbols.
  * Ouput: a list of words that make up the newly formed dictionary.

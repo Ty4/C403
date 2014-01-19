@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * The Blocks Problem  NONTRIVIAL
+ * The Blocks Problem:	NONTRIVIAL	(Simulation)
  */
 
 #include <iostream>

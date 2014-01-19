@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Ugly Numbers Problem NONTRIVIAL
+ * Ugly Numbers Problem:	NONTRIVIAL	(Data Structures)
  *
  * An ugly number is a number where the only prime factors are 2, 3, or 5.
  * This progam begins with 1 as the first ugly number. The next number is

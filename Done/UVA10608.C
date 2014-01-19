@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Friends
+ * Friends:     (Data Structures)
  *
  * This program utilizes the union-find algorithm for it's solution.
  * Once the sets are all made and divided up, I created a function that

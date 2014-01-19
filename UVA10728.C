@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Help!  NONTRIVIAL
+ * Help!:	NONTRIVIAL	(Data Structures)
  *
  */
 
