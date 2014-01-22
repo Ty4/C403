@@ -5,6 +5,7 @@
  */
 
 #include <cstdio>
+#include <iostream>
 #include <map>
 #include <string>
 #include <sstream>
@@ -15,18 +16,18 @@ map<string, int> Scale;
 
 void initMap()
 {
-	Scale["A"] = 1;
-	Scale["A#"] = Scale["Bb"] = 2;
-	Scale["B"] = 3;
-	Scale["C"] = 4;
-	Scale["C#"] = Scale["Db"] = 5;
-	Scale["D"] = 6;
-	Scale["D#"] = Scale["Eb"] = 7;
-	Scale["E"] = 8;
-	Scale["F"] = 9;
-	Scale["F#"] = Scale["Gb"] = 10;
-	Scale["G"] = 11;
-	Scale["G#"] = Scale["Ab"] = 12;
+	Scale["A"] = 0;
+	Scale["A#"] = Scale["Bb"] = 1;
+	Scale["B"] = 2;
+	Scale["C"] = 3;
+	Scale["C#"] = Scale["Db"] = 4;
+	Scale["D"] = 5;
+	Scale["D#"] = Scale["Eb"] = 6;
+	Scale["E"] = 7;
+	Scale["F"] = 8;
+	Scale["F#"] = Scale["Gb"] = 9;
+	Scale["G"] = 10;
+	Scale["G#"] = Scale["Ab"] = 11;
 }
 
 // takes a string of notes as input, returns a string representing
@@ -39,7 +40,7 @@ string procIntervals(const string & song)
 	songStream >> first;
 	while (songStream >> second){
 		int result = (Scale[second] - Scale[first])%12;
-		if (result < 0) result += 12;
+		if (result < 0)	result += 12;
 		intervals << result << " ";
 		first = second;
 	}
@@ -51,23 +52,21 @@ string procIntervals(const string & song)
 // string containing those notes
 string readLine(const int M)
 {
+	char input[3];
 	string line;
+
 	for (int i = 0; i < M; ++i){
-		char tmp[2];
-		scanf("%s", tmp);
-		if (tmp[1]){
-			line.push_back(tmp[0]);
-			line.push_back(tmp[1]);
-		}
-		else
-			line.push_back(tmp[0]);
+		scanf("%s", input);
+	 	line.push_back(input[0]);
+		if (input[1])
+			line.push_back(input[1]);
 		line.push_back(' ');
 	}
 
 	return line;
 }
 
-bool validInput(const int M, const int T)
+bool stillReading(const int M, const int T)
 {
 	return ((M != 0) && (T != 0));
 }
@@ -82,15 +81,15 @@ int main()
 	initMap();
 
 	scanf("%d %d", &M, &T);
-	while(validInput(M, T)){
+	while(stillReading(M, T)){
 
 		// read in song
 		song = readLine(M);
 		// transfer song into string of intervals
 		songInt = procIntervals(song);
-		// read in snippet
+		// // read in snippet
 		snippet = readLine(T);
-		// transfer snippet into string of intevals
+		// // transfer snippet into string of intevals
 		snipInt = procIntervals(snippet);
 
 		result = songInt.find(snipInt);
@@ -99,6 +98,7 @@ int main()
 		else printf("N\n");
 
 		scanf("%d %d", &M, &T);
+		// printf("M: %d T: %d\n", M, T);
 	}
 
 	return 0;
