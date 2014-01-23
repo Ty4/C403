@@ -37,10 +37,10 @@ string procIntervals(const string & song)
 	stringstream intervals;
 	stringstream songStream(song);
 	string first, second;
+
 	songStream >> first;
 	while (songStream >> second){
-		int result = (Scale[second] - Scale[first])%12;
-		if (result < 0)	result += 12;
+		int result = (Scale[second] - Scale[first] + 12)%12;
 		intervals << result << " ";
 		first = second;
 	}
@@ -92,13 +92,18 @@ int main()
 		// // transfer snippet into string of intevals
 		snipInt = procIntervals(snippet);
 
+		if (snipInt.size() == 0){
+			printf("N\n");
+			scanf("%d %d", &M, &T);
+			continue;
+		}
+
 		result = songInt.find(snipInt);
 		if (result != string::npos)
 			printf("S\n");
 		else printf("N\n");
 
 		scanf("%d %d", &M, &T);
-		// printf("M: %d T: %d\n", M, T);
 	}
 
 	return 0;
