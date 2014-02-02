@@ -1,6 +1,6 @@
 /* by Tyler Davidson
  *
- * Light and Transparencies
+ * Light and Transparencies:	(Sorting)
  *
 */
 
@@ -11,11 +11,11 @@
 using namespace std;
 
 typedef struct Point{
-	float x;
-	float y;
+	double x;
+	double y;
 
 	Point() : x(0), y(0) {}
-	Point(float _x, float _y) : x(_x), y(_y) {
+	Point(double _x, double _y) : x(_x), y(_y) {
 		if (_x == -0) x = 0;
 		if (_y == -0) y = 0;
 	}
@@ -28,10 +28,10 @@ typedef struct Point{
 } Point;
 
 typedef struct Film{
-	float transCoeff;
+	double transCoeff;
 	pair<Point, Point> endpoints;
 
-	Film(const Point & p1, const Point & p2, float coeff) : transCoeff(coeff)
+	Film(const Point & p1, const Point & p2, double coeff) : transCoeff(coeff)
 	{
 		if (p2 < p1) endpoints = make_pair(p2, p1);
 		else endpoints = make_pair(p1, p2);
@@ -59,7 +59,7 @@ int main()
 
 		scanf("%d", &NL);
 		while (NL-- > 0){
-			float x1, y1, x2, y2, r;
+			double x1, y1, x2, y2, r;
 			scanf("%f %f %f %f %f", &x1, &y1, &x2, &y2, &r);
 			endpointSet.insert(Point(x1, y1));
 			endpointSet.insert(Point(x2, y2));
@@ -74,7 +74,7 @@ int main()
 		printf("%d\n", pointArray.size()+1);
 		printf("-inf %.3f 1.000\n", pointArray[0].x);
 		for (int i = 1; i < pointArray.size(); ++i){
-			float result = 1.0;
+			double result = 1.0;
 
 			for (int j = 0; j < filmArray.size(); ++j){
 				Point p1 = filmArray[j].endpoints.first;

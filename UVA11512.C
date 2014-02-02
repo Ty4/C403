@@ -1,4 +1,4 @@
-/* by Tyler Davidson
+git /* by Tyler Davidson
  *
  * GATTACA: (Strings)
  *
