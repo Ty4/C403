@@ -87,10 +87,16 @@ int main()
 		msp debtMap = debts.getDebts();
 		for (msp::iterator it = debtMap.begin(); it != debtMap.end(); ++it){
 			if ((it->first) != (it->second).first){
-				printf("%s %s %d\n", 
-					(it->first).c_str(), 
-					((it->second).first).c_str(),
-					(it->second).second);
+				if ((it->second).second > 0)
+					printf("%s %s %d\n", 
+						(it->first).c_str(), 
+						((it->second).first).c_str(),
+						(it->second).second);
+				else
+					printf("%s %s %d\n", 
+						((it->second).first).c_str(),
+						(it->first).c_str(), 
+						(it->second).second);
 			}
 		}
 		printf("\n");
