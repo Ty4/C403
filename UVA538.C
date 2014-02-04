@@ -35,25 +35,19 @@ public:
 			return findDebtor(debts[debtee].first);
 	}
 
-	bool owesSamePerson(const string & p1, const string & p2)
+	l
+	void update(const string & debtee, const string & debtor, const int amount)
 	{
-		return findDebtor(p1) == findDebtor(p2);
-	}
-
-	void unionSet(const string & p1, const string & p2)
-	{
-		if (!owesSamePerson(p1, p2)){
-			string x = findDebtor(p1), y = findDebtor(p2);
-			if (rank[x] > rank[y])
-				debts[y].first = x;
-			else{
-				debts[x].first = y;
-
-			}
+		if (debts[debtor].first == debtor){
+			debts[debtee].first = debtor;
+			debts[debtee].second = amount;
+		}
+		else {
+			debts[debtor].second -= amount;
+			update(debtee, debts[debtor].first, amount);
 		}
 	}
 };
-
 int n, t;
 
 int main()
