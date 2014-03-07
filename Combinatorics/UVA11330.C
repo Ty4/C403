@@ -38,7 +38,7 @@ int main()
 				min = len;
 		}
 
-		printf("%d\n", min);;
+		printf("%d\n", min);
 	}
 
 	return 0;
