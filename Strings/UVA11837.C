@@ -1,9 +1,3 @@
-/* by Tyler Davidson
- *
- * Musical Plagiarism: 		(Strings)
- *
- */
-
 #include <cstdio>
 #include <iostream>
 #include <map>
@@ -13,7 +7,9 @@
 using namespace std;
 
 map<string, int> Scale;
+int M, T;
 
+/* SETUP ********************************************************************/
 void initMap()
 {
 	Scale["A"] = 0;
@@ -30,9 +26,25 @@ void initMap()
 	Scale["G#"] = Scale["Ab"] = 11;
 }
 
+bool stillReading(const int M, const int T)
+{
+	return (M != 0 && T != 0) ? true : false;
+}
+
+string readLine(const int length)
+{
+	string song, note;
+	for (int i = 0; i < length; ++i){
+		cin >> note;
+		song.append(note);
+		song.append(" ");
+	}
+	return song;
+}
+
 // takes a string of notes as input, returns a string representing
 // the intervals between the notes
-string procIntervals(const string & song)
+string procDifs(const string & song)
 {
 	stringstream intervals;
 	stringstream songStream(song);
@@ -40,70 +52,37 @@ string procIntervals(const string & song)
 
 	songStream >> first;
 	while (songStream >> second){
-		int result = (Scale[second] - Scale[first] + 12)%12;
-		intervals << result << " ";
+		int result = ((Scale[second] - Scale[first]) + 12) %12;
+		intervals << result;
 		first = second;
 	}
 
 	return intervals.str();
 }
-
-// reads from standard in, notes of the song or snippet, returns the
-// string containing those notes
-string readLine(const int M)
-{
-	char input[3];
-	string line;
-
-	for (int i = 0; i < M; ++i){
-		scanf("%s", input);
-	 	line.push_back(input[0]);
-		if (input[1])
-			line.push_back(input[1]);
-		line.push_back(' ');
-	}
-
-	return line;
-}
-
-bool stillReading(const int M, const int T)
-{
-	return ((M != 0) && (T != 0));
-}
+/* ENDSETUP *****************************************************************/
 
 int main()
 {
-	int M, T;
-	size_t result;
-	string song, songInt;
-	string snippet, snipInt;
+	string song, snippet;
+	cin >> M >> T;
 
 	initMap();
-
-	scanf("%d %d", &M, &T);
 	while(stillReading(M, T)){
-
-		// read in song
 		song = readLine(M);
-		// transfer song into string of intervals
-		songInt = procIntervals(song);
-		// // read in snippet
 		snippet = readLine(T);
-		// // transfer snippet into string of intevals
-		snipInt = procIntervals(snippet);
 
-		if (snipInt.size() == 0){
-			printf("N\n");
-			scanf("%d %d", &M, &T);
-			continue;
-		}
+		song = procDifs(song);
+		snippet = procDifs(snippet);
 
-		result = songInt.find(snipInt);
-		if (result != string::npos)
-			printf("S\n");
-		else printf("N\n");
+		cout << song << endl;
+		cout << snippet << endl;
 
-		scanf("%d %d", &M, &T);
+		int result = song.find(snippet);
+		if (result >= 0) cout << "S";
+		else cout << "N";
+		cout << endl;
+
+		cin >> M >> T;
 	}
 
 	return 0;
